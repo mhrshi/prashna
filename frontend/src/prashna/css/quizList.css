@@ -1,0 +1,22 @@
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-view .list-cell {
+    -fx-text-fill: #2d2d2d;
+    -fx-background-color: #ffffff;
+}
+
+.list-view .label {
+    -fx-text-fill: #2d2d2d;
+}
+
+.list-view .list-cell:hover {
+    -fx-text-fill: #2d2d2d;
+    -fx-background-color: #ffffff;
+}
+
+.list-view .list-cell:selected {
+    -fx-text-fill: #2d2d2d;
+    -fx-background-color: #64b5f6;
+}

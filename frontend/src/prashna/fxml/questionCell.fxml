@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="183.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prashna.controller.QuestionCellController">
+   <children>
+      <VBox layoutY="12.0" prefHeight="183.0" prefWidth="520.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="question" style="-fx-padding: 12 12 0 12;" text="Question" wrapText="true">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="alpha" style="-fx-padding: 12 12 0 12;" text="Alpha" wrapText="true">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="beta" style="-fx-padding: 12 12 0 12;" text="Beta" wrapText="true">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="gamma" style="-fx-padding: 12 12 0 12;" text="Gamma" wrapText="true">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="delta" style="-fx-padding: 12 12 0 12;" text="Delta" wrapText="true">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </JFXRadioButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

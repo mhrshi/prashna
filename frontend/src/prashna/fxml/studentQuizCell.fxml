@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="68.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prashna.controller.StudentQuizCellController">
+   <children>
+      <Label fx:id="quizName" layoutX="21.0" layoutY="24.0" prefHeight="20.0" prefWidth="200.0" text="QuizName" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <font>
+            <Font name="Roboto Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="topic" layoutX="22.0" layoutY="56.0" maxWidth="116.0" prefHeight="18.0" prefWidth="116.0" text="Topic" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="course" layoutX="471.0" layoutY="260.0" maxWidth="88.0" prefHeight="18.0" prefWidth="88.0" text="Course" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="12.0">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

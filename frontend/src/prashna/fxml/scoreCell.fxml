@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="prashna.controller.ScoreCellController" prefHeight="44.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="studentId" prefHeight="20.0" prefWidth="222.0" text="StudentId" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <font>
+            <Font name="Roboto Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="504.0" layoutY="22.0" prefHeight="20.0" prefWidth="59.0" text="Score" textAlignment="JUSTIFY" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+         <font>
+            <Font name="Roboto Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

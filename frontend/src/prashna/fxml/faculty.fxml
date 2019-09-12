@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prashna.controller.FacultyController">
+   <children>
+      <JFXTabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@../css/faculty.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Q U I Z Z E S">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutY="103.0" prefHeight="200.0" prefWidth="298.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXListView fx:id="quizListView" layoutX="50.0" layoutY="124.0" prefHeight="600.0" prefWidth="250.0" stylesheets="@../css/quizList.css" verticalGap="10.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="24.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="953.0" layoutY="136.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="648.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-padding: 0 24 0 0;">
+                                       <children>
+                                          <ImageView fitHeight="208.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../resources/refresh.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label style="-fx-padding: 20;" text="Click to refresh">
+                                             <font>
+                                                <Font name="Roboto Italic" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <JFXListView fx:id="scoreListView" layoutX="308.0" layoutY="224.0" prefHeight="600.0" prefWidth="644.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="308.0" AnchorPane.rightAnchor="248.0" AnchorPane.topAnchor="24.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="C R E A T E    Q U I Z">
+               <content>
+                  <StackPane fx:id="stackPane">
+                     <children>
+                        <HBox fx:id="fileArea" alignment="CENTER" prefHeight="100.0" prefWidth="1449.0" style="-fx-background-color: #ef9a9a;">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fitHeight="276.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../resources/faculty.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-padding: 20; -fx-font-style: italic;" text="Drop an XLSX file here">
+                                       <font>
+                                          <Font name="Roboto" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>
